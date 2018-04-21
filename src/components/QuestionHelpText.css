@@ -1,0 +1,12 @@
+.question-help-text {
+  flex: 30%;
+}
+
+.help-text {
+  margin-left: 1rem;
+  background-color: #5dade2;
+  padding: 0.3rem;
+  color: white;
+  border-radius: 0.2rem;
+  text-align: center;
+}

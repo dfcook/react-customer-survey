@@ -1,0 +1,15 @@
+.question-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.question-label {
+  flex: 30%;
+}
+
+.question-input {
+  flex: 40%;
+}

@@ -1,0 +1,33 @@
+.App {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 11rem;
+  border: 1px solid #aaa;
+  border-radius: 0.7rem;
+  background-color: white;
+}
+
+.title {
+  padding: 1rem;
+  background-color: #2ecc71;
+  border-top-left-radius: 0.7rem;
+  border-top-right-radius: 0.7rem;
+  color: white;
+  font-size: 1.7em;
+}
+
+.questions-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+  justify-content: space-around;
+}
+
+.footer {
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-bottom-left-radius: 0.7rem;
+  border-bottom-right-radius: 0.7rem;
+}

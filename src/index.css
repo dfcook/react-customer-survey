@@ -1,0 +1,15 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'Roboto';
+  font-size: 0.9em;
+}
+
+body {
+  padding: 1.5rem;
+  margin: 1.5rem;
+  background-color: #ebf5fb;
+}
