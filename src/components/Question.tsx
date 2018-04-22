@@ -1,17 +1,17 @@
 import React from 'react';
-import { IQuestion } from '../types';
+import { Question } from '../types';
 import './Question.css';
 import QuestionHelpText from './QuestionHelpText';
 
 interface IQuestionProps {
-  question: IQuestion;
+  question: Question;
 }
 
 interface IQuestionState {
   helpTextVisible: boolean;
 }
 
-export default class Question extends React.Component<IQuestionProps, IQuestionState> {
+export default class QuestionComponent extends React.Component<IQuestionProps, IQuestionState> {
   public state: IQuestionState = {
     helpTextVisible: false
   };

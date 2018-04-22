@@ -1,4 +1,4 @@
-import { AnswerAction, IMoveToQuestionAction, IUpdateAnswerAction } from '../actions';
+import { AnswerAction, ILoadQuestionsAction, IMoveToQuestionAction, IUpdateAnswerAction } from '../actions';
 import ActionTypes from '../ActionTypes';
 import { IAppState } from '../AppState';
 import initialState from '../initialState';
@@ -11,6 +11,14 @@ export default (state: IAppState = initialState, action: AnswerAction | any): IA
       return {
         ...state,
         answers: state.answers.map(a => a.key === answer.key ? answer : a)
+      };
+
+    case ActionTypes.LOAD_QUESTIONS:
+      const questions = (action as ILoadQuestionsAction).questions;
+
+      return {
+        ...state,
+        questions
       };
 
     case ActionTypes.MOVE_TO_QUESTION:

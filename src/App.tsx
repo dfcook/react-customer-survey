@@ -4,12 +4,12 @@ import './App.css';
 import NavigationButtons from './components/NavigationButtons';
 import RadioQuestion from './components/RadioQuestion';
 import SelectQuestion from './components/SelectQuestion';
-import { AnswerType, IAnswer, IQuestion, IRadioQuestion, ISelectQuestion } from './types';
+import { AnswerType, IAnswer, IRadioQuestion, ISelectQuestion, Question } from './types';
 
 export interface IAppProps {
   answers: IAnswer[];
   currentIndex: number;
-  questions: IQuestion[];
+  questions: Question[];
   moveToQuestion: (index: number) => void;
   updateAnswer: (answer: IAnswer) => void;
 }
