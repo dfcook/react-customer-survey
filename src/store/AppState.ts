@@ -1,6 +1,7 @@
 import { IAnswer, ISelectQuestion } from '../types';
 
 export interface IAppState {
-  readonly questions: ISelectQuestion[];
   readonly answers: IAnswer[];
+  readonly currentIndex: number;
+  readonly questions: ISelectQuestion[];
 }

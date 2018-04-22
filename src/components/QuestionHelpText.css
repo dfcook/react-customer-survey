@@ -1,9 +1,9 @@
 .question-help-text {
   flex: 30%;
+  margin-left: 1.1rem;
 }
 
 .help-text {
-  margin-left: 1rem;
   background-color: #5dade2;
   padding: 0.3rem;
   color: white;

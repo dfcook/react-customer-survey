@@ -13,4 +13,10 @@ export interface ISelectQuestion extends IQuestion {
   options: IOption[];
 }
 
-export type Question = ISelectQuestion;
+export interface IRadioQuestion extends IQuestion {
+  options: IOption[];
+}
+
+export type Question =
+  | ISelectQuestion
+  | IRadioQuestion;

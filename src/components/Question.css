@@ -1,15 +1,19 @@
 .question-container {
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .question-label {
-  flex: 30%;
+  font-weight: bold;
+  margin-bottom: 1.1rem;
 }
 
-.question-input {
-  flex: 40%;
+.radio-select {
+  margin-top: 0.5rem;
+}
+
+.radio-option-text {
+  margin-left: 0.7rem;
 }

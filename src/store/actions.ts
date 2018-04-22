@@ -8,11 +8,21 @@ export interface IUpdateAnswerAction {
   readonly answer: IAnswer;
 }
 
+export interface IMoveToQuestionAction {
+  readonly type: ActionTypes.MOVE_TO_QUESTION;
+  readonly index: number;
+}
+
 export type AnswerAction =
-  | IUpdateAnswerAction;
+  | IUpdateAnswerAction
+  | IMoveToQuestionAction;
 
 export const updateAnswer: ActionCreator<AnswerAction> = (answer: IAnswer) => ({
   answer,
   type: ActionTypes.UPDATE_ANSWER,
 });
 
+export const moveToQuestion: ActionCreator<AnswerAction> = (index: number) => ({
+  index,
+  type: ActionTypes.MOVE_TO_QUESTION,
+});

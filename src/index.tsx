@@ -7,18 +7,20 @@ import App from './App';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 import store from './store';
-import { updateAnswer } from './store/actions';
+import { moveToQuestion, updateAnswer } from './store/actions';
 import { IAppState } from './store/AppState';
 import IDispatch from './store/dispatch';
 
-const mapStateToProps = (state: IAppState) => {
+const mapStateToProps = ({ answers, currentIndex, questions }: IAppState) => {
   return {
-    answers: state.answers,
-    questions: state.questions,
+    answers,
+    currentIndex,
+    questions,
   };
 };
 
 const mapDispatchToProps = (dispatch: IDispatch) => ({
+  moveToQuestion: bindActionCreators(moveToQuestion, dispatch),
   updateAnswer: bindActionCreators(updateAnswer, dispatch)
 });
 

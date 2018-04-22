@@ -20,8 +20,6 @@ const Select = styled.select`
   font-size: 0.9em;
   &:focus {
     outline: 0;
-    color: transparent;
-    text-shadow: 0 0 0 #000;
   }
 `;
 
