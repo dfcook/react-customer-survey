@@ -41,5 +41,4 @@ const SelectQuestion = ({ question, answer, updateAnswer }: ISelectQuestionProps
   );
 }
 
-
 export default SelectQuestion;
